@@ -1,0 +1,24 @@
+[
+  {
+    "id": 0,
+    "name": "Tubarão",
+    "diet": ["Golfinho", "Peixe-palhaço"]
+  },
+
+  {
+    "id": 1,
+    "name": "Golfinho",
+    "diet": ["Peixe-palhaço"]
+
+  },
+  {
+    "id": 2,
+    "name": "Peixe-palhaço",
+    "diet": ["Alga"]
+  },
+  {
+    "id": 3,
+    "name": "Tartaruga",
+    "diet": ["Peixe-palhaço"]
+  }
+]
