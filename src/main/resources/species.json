@@ -1,24 +1,82 @@
 [
   {
     "id": 0,
-    "name": "Tubarão",
-    "diet": ["Golfinho", "Peixe-palhaço"]
+    "name": "Tubarão Martelo",
+    "diet": ["Golfinho", "Peixe-palhaço", "Salmão"]
   },
-
   {
     "id": 1,
     "name": "Golfinho",
-    "diet": ["Peixe-palhaço"]
-
+    "diet": ["Peixe-palhaço", "Salmão"]
   },
   {
     "id": 2,
     "name": "Peixe-palhaço",
-    "diet": ["Alga"]
+    "diet": ["Alga", "Salmão"]
   },
   {
     "id": 3,
     "name": "Tartaruga",
-    "diet": ["Peixe-palhaço"]
+    "diet": ["Peixe-palhaço", "Salmão"]
+  },
+  {
+    "id": 4,
+    "name": "Krill",
+    "diet": ["Plâncton", "Salmão"]
+  },
+  {
+    "id": 5,
+    "name": "Polvo",
+    "diet": ["Peixe-palhaço", "Caranguejo", "Salmão"]
+  },
+  {
+    "id": 6,
+    "name": "Orca",
+    "diet": ["Foca", "Salmão", "Golfinho", "Peixe-palhaço", "Tubarão Branco", "Polvo"]
+  },
+  {
+    "id": 7,
+    "name": "Foca",
+    "diet": ["Salmão"]
+  },
+  {
+    "id": 8,
+    "name": "Estrela-do-mar",
+    "diet": ["Plâncton", "Salmão"]
+  },
+  {
+    "id": 9,
+    "name": "Cavalo-marinho",
+    "diet": ["Plâncton", "Salmão"]
+  },
+  {
+    "id": 10,
+    "name": "Moreia",
+    "diet": ["Peixe-palhaço", "Caranguejo", "Salmão"]
+  },
+  {
+    "id": 11,
+    "name": "Atum",
+    "diet": ["Salmão"]
+  },
+  {
+    "id": 12,
+    "name": "Salmão",
+    "diet": ["Krill"]
+  },
+  {
+    "id": 13,
+    "name": "Lagosta",
+    "diet": ["Alga", "Salmão"]
+  },
+  {
+    "id": 14,
+    "name": "Enguia",
+    "diet": ["Caranguejo", "Salmão"]
+  },
+  {
+    "id": 15,
+    "name": "Caranguejo",
+    "diet": ["Alga", "Salmão"]
   }
 ]

@@ -19,23 +19,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         List<Specie> speciesList = readSpeciesFromJson("src/main/resources/species.json");
         Graph graph = new Graph(speciesList);
 
-        // Construir o grafo baseado na dieta
         graph.buildGraph();
 
-        // Colorir o grafo e obter tanques
         List<Tank> tanks = graph.colorGraph();
 
-        System.out.println("\n");
+        System.out.println("\n Matriz de Adjacência:\n");
         graph.printAdjacencyMatrix();
         System.out.println("\n");
 
         for (int i = 0; i < tanks.size(); i++) {
             System.out.println("Tank " + (i + 1) + ": " + tanks.get(i));
         }
+
+        System.out.println("\nTotal de tanques: " + tanks.size() + "\n");
     }
 
     private static List<Specie> readSpeciesFromJson(String filePath) {

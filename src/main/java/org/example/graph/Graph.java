@@ -18,7 +18,7 @@ public class Graph {
     public void buildGraph() {
         for (int i = 0; i < speciesList.size(); i++) {
             for (int j = i + 1; j < speciesList.size(); j++) {
-                // Adicionar aresta apenas se as espécies tiverem relação de predação
+                // Add edge only if species have a predation relationship
                 if (speciesList.get(i).getDiet().contains(speciesList.get(j).getName()) ||
                         speciesList.get(j).getDiet().contains(speciesList.get(i).getName())) {
                     addEdge(speciesList.get(i), speciesList.get(j));
@@ -31,7 +31,7 @@ public class Graph {
         int specieIndex1 = speciesList.indexOf(specie1);
         int specieIndex2 = speciesList.indexOf(specie2);
 
-        // Adicionar aresta bidirecional - grafo não direcionado
+        // Add bidirectional edge - undirected graph
         adjacencyMatrix[specieIndex1][specieIndex2] = true;
         adjacencyMatrix[specieIndex2][specieIndex1] = true;
     }
@@ -72,9 +72,16 @@ public class Graph {
     }
 
     public void printAdjacencyMatrix() {
+        System.out.print("   ");
+        for (Specie specie : speciesList) {
+            System.out.printf("%-4s", specie.getName().substring(0, Math.min(specie.getName().length(), 3)));
+        }
+        System.out.println();
+
         for (int i = 0; i < adjacencyMatrix.length; i++) {
+            System.out.printf("%-4s", speciesList.get(i).getName().substring(0, Math.min(speciesList.get(i).getName().length(), 3)));
             for (int j = 0; j < adjacencyMatrix[i].length; j++) {
-                System.out.print(adjacencyMatrix[i][j] + " ");
+                System.out.printf("%-4s", adjacencyMatrix[i][j] ? "T" : "F");
             }
             System.out.println();
         }
